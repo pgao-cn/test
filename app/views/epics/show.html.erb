@@ -1,0 +1,69 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Rpt date:</strong>
+  <%= @epic.rpt_date %>
+</p>
+
+<p>
+  <strong>Epic key:</strong>
+  <%= @epic.epic_key %>
+</p>
+
+<p>
+  <strong>Effort tracking:</strong>
+  <%= @epic.effort_tracking %>
+</p>
+
+<p>
+  <strong>Epic name:</strong>
+  <%= @epic.epic_name %>
+</p>
+
+<p>
+  <strong>Epic component:</strong>
+  <%= @epic.epic_component %>
+</p>
+
+<p>
+  <strong>Effort original:</strong>
+  <%= @epic.effort_original %>
+</p>
+
+<p>
+  <strong>Effort remaining:</strong>
+  <%= @epic.effort_remaining %>
+</p>
+
+<p>
+  <strong>Effort spent:</strong>
+  <%= @epic.effort_spent %>
+</p>
+
+<p>
+  <strong>Effort changed:</strong>
+  <%= @epic.effort_changed %>
+</p>
+
+<p>
+  <strong>Epic reporter:</strong>
+  <%= @epic.epic_reporter %>
+</p>
+
+<p>
+  <strong>Epic type:</strong>
+  <%= @epic.epic_type %>
+</p>
+
+<p>
+  <strong>Epic assignee:</strong>
+  <%= @epic.epic_assignee %>
+</p>
+
+<p>
+  <strong>Epic status:</strong>
+  <%= @epic.epic_status %>
+</p>
+
+<%= link_to 'Edit', edit_epic_path(@epic) %> |
+<%= link_to 'Back', epics_path %>

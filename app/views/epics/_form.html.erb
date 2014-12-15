@@ -1,0 +1,69 @@
+<%= form_for(@epic) do |f| %>
+  <% if @epic.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@epic.errors.count, "error") %> prohibited this epic from being saved:</h2>
+
+      <ul>
+      <% @epic.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :rpt_date %><br>
+    <%= f.date_select :rpt_date %>
+  </div>
+  <div class="field">
+    <%= f.label :epic_key %><br>
+    <%= f.text_field :epic_key %>
+  </div>
+  <div class="field">
+    <%= f.label :effort_tracking %><br>
+    <%= f.text_field :effort_tracking %>
+  </div>
+  <div class="field">
+    <%= f.label :epic_name %><br>
+    <%= f.text_field :epic_name %>
+  </div>
+  <div class="field">
+    <%= f.label :epic_component %><br>
+    <%= f.text_field :epic_component %>
+  </div>
+  <div class="field">
+    <%= f.label :effort_original %><br>
+    <%= f.number_field :effort_original %>
+  </div>
+  <div class="field">
+    <%= f.label :effort_remaining %><br>
+    <%= f.number_field :effort_remaining %>
+  </div>
+  <div class="field">
+    <%= f.label :effort_spent %><br>
+    <%= f.number_field :effort_spent %>
+  </div>
+  <div class="field">
+    <%= f.label :effort_changed %><br>
+    <%= f.number_field :effort_changed %>
+  </div>
+  <div class="field">
+    <%= f.label :epic_reporter %><br>
+    <%= f.text_field :epic_reporter %>
+  </div>
+  <div class="field">
+    <%= f.label :epic_type %><br>
+    <%= f.text_field :epic_type %>
+  </div>
+  <div class="field">
+    <%= f.label :epic_assignee %><br>
+    <%= f.text_field :epic_assignee %>
+  </div>
+  <div class="field">
+    <%= f.label :epic_status %><br>
+    <%= f.text_field :epic_status %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

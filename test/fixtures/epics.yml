@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  rpt_date: 2014-12-15
+  epic_key: MyString
+  effort_tracking: MyString
+  epic_name: MyString
+  epic_component: MyString
+  effort_original: 1
+  effort_remaining: 1
+  effort_spent: 1
+  effort_changed: 1
+  epic_reporter: MyString
+  epic_type: MyString
+  epic_assignee: MyString
+  epic_status: MyString
+
+two:
+  rpt_date: 2014-12-15
+  epic_key: MyString
+  effort_tracking: MyString
+  epic_name: MyString
+  epic_component: MyString
+  effort_original: 1
+  effort_remaining: 1
+  effort_spent: 1
+  effort_changed: 1
+  epic_reporter: MyString
+  epic_type: MyString
+  epic_assignee: MyString
+  epic_status: MyString
